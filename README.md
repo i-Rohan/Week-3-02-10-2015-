@@ -18,7 +18,7 @@ Sample Output:
 
 Langford Pairing <br> 
 Wikipedia Link: https://en.wikipedia.org/wiki/Langford_pairing <br>
-Write a program to print out a Langford pairing for order n. However, instead of printing numbers, print capital alphabets, and use their index (like A is 1, B is 2, C is 3….. Z is 26) to compute the apartness of 2 alphabets. 
+Write a program to print out a Langford pairing for order n. However, instead of printing numbers, print capital alphabets, and use their index (like A is 1, B is 2, C is 3….. Z is 26) to compute the apartness between 2 alphabets. 
 
 Example for n = 3. 
 There are only 2 possible solutions 
