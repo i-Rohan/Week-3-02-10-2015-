@@ -12,7 +12,7 @@ Sample Input:
 57 <br>
 Sample Output: 
 <br>
-57 becomes a palindrome after 2 steps and the new number is 365 
+57 becomes a palindrome after 2 steps and the new number is 363 
 
 # JARVIS (Hard) 
 
