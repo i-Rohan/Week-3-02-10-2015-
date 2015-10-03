@@ -1,0 +1,84 @@
+/*
+Name: Rohan Sharma
+Stream:CSE
+Compiler: GNU GCC
+IDE: Code Blocks
+OS: Windows 8.1 Pro
+*/
+
+//header file
+#include <iostream>
+
+using namespace std;
+
+//functions declaration
+void initialize(int*,int);  //function to initialize each element of array with 0
+void output(int*,int);  //function to give output of the array
+void langford(int*,int,int);    //recursive function to compute Langford series
+
+//global variable
+int count=1;    //to count number of outputs
+
+//main function starts
+int main()
+{
+    int n;
+    cout<<"Enter order: ";
+    cin>>n; //input
+    int size=2*n;
+    int a[size];
+    initialize(a,2*n);
+    if(n%4==0||(n+1)%4==0)
+    {
+        langford(a,n,size); //calling langford function
+    }
+    else
+        cout<<"Cannot form Langford pairs!\nInput should be either multiple of 4 or one less than multiple of 4";
+    return 0;
+}
+//main function ends
+
+//initialize function definition starts
+void initialize(int *a,int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        a[i]=0;
+}
+//initialize function definition ends
+
+//output function definition starts
+void output(int *a,int n)
+{
+    int i;
+    for(i=0;i<n;i++)
+        cout<<char(a[i]+64);
+    cout<<"\n";
+    count++;
+}
+//output function definition ends
+
+//langford function definition starts
+void langford(int *a,int n,int size)
+{
+    int i;
+    if(count>7)
+        return;
+    if(n==0)    //termination condition
+    {
+        output(a,size);
+        return;
+    }
+    for(i=0;i<size-n-1;i++)
+    {
+        if(a[i]==0&&a[i+n+1]==0)
+        {
+            a[i]=n;
+            a[i+n+1]=n;
+            langford(a,n-1,size);
+            a[i]=0;
+            a[i+n+1]=0;
+        }
+    }
+}
+//langford function definition ends
