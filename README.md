@@ -14,6 +14,19 @@ Sample Output:
 <br>
 57 becomes a palindrome after 2 steps and the new number is 363 
 
+<br> 
+Sample Input: 76
+<br>
+Output: 76 becomes a palindrome after 2 steps and the new number is 484
+
+<br> 
+Sample Input: 23
+<br>
+Output: 23 becomes a palindrome after 1 step and the new number is 55
+
+
+
+
 # JARVIS (Hard) 
 
 Langford Pairing <br> 
